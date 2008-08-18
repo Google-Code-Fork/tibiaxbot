@@ -16,6 +16,9 @@ namespace TibiaXBot
         public Client client;
         public Player player;
         public Tibia.Objects.Console console;
+        public Form frmWASD;
+        public Form frmOutFit;
+        public Form frmSpammer;
 
         public Main()
         {
@@ -25,6 +28,24 @@ namespace TibiaXBot
         private void Main_Load(object sender, EventArgs e)
         {
             client = Tibia.Util.ClientChooser.ShowBox();
+            frmWASD = new WASD();
+            frmSpammer = new Spammer();
+            frmOutFit = new Outfit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmWASD.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmSpammer.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmOutFit.ShowDialog();
         }
     }
 }
