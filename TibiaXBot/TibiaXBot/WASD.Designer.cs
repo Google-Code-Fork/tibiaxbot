@@ -28,20 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonKeyboard = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonCheckBox = new System.Windows.Forms.RadioButton();
+            this.buttonEnable = new System.Windows.Forms.CheckBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // buttonKeyboard
+            // 
+            this.buttonKeyboard.AutoSize = true;
+            this.buttonKeyboard.Location = new System.Drawing.Point(6, 19);
+            this.buttonKeyboard.Name = "buttonKeyboard";
+            this.buttonKeyboard.Size = new System.Drawing.Size(84, 17);
+            this.buttonKeyboard.TabIndex = 1;
+            this.buttonKeyboard.TabStop = true;
+            this.buttonKeyboard.Text = "Insert/Home";
+            this.buttonKeyboard.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonEnable);
+            this.groupBox1.Controls.Add(this.buttonCheckBox);
+            this.groupBox1.Controls.Add(this.buttonKeyboard);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(138, 82);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "How-To Enable/Disable";
+            // 
+            // buttonCheckBox
+            // 
+            this.buttonCheckBox.AutoSize = true;
+            this.buttonCheckBox.Location = new System.Drawing.Point(6, 42);
+            this.buttonCheckBox.Name = "buttonCheckBox";
+            this.buttonCheckBox.Size = new System.Drawing.Size(73, 17);
+            this.buttonCheckBox.TabIndex = 2;
+            this.buttonCheckBox.TabStop = true;
+            this.buttonCheckBox.Text = "Checkbox";
+            this.buttonCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // buttonEnable
+            // 
+            this.buttonEnable.AutoSize = true;
+            this.buttonEnable.Location = new System.Drawing.Point(73, 59);
+            this.buttonEnable.Name = "buttonEnable";
+            this.buttonEnable.Size = new System.Drawing.Size(59, 17);
+            this.buttonEnable.TabIndex = 3;
+            this.buttonEnable.Text = "Enable";
+            this.buttonEnable.UseVisualStyleBackColor = true;
+            this.buttonEnable.CheckedChanged += new System.EventHandler(this.buttonEnable_CheckedChanged);
             // 
             // WASD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.ClientSize = new System.Drawing.Size(168, 111);
+            this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "WASD";
             this.Text = "WASD";
             this.Load += new System.EventHandler(this.WASD_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.RadioButton buttonKeyboard;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton buttonCheckBox;
+        private System.Windows.Forms.CheckBox buttonEnable;
     }
 }

@@ -26,5 +26,10 @@ namespace TibiaXBot
         {
 
         }
+
+        private void buttonEnable_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
