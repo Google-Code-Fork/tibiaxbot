@@ -30,8 +30,8 @@
         {
             this.buttonKeyboard = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonCheckBox = new System.Windows.Forms.RadioButton();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
+            this.buttonCheckBox = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@
             this.buttonKeyboard.TabStop = true;
             this.buttonKeyboard.Text = "Insert/Home";
             this.buttonKeyboard.UseVisualStyleBackColor = true;
+            this.buttonKeyboard.CheckedChanged += new System.EventHandler(this.buttonKeyboard_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -58,17 +59,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "How-To Enable/Disable";
             // 
-            // buttonCheckBox
-            // 
-            this.buttonCheckBox.AutoSize = true;
-            this.buttonCheckBox.Location = new System.Drawing.Point(6, 42);
-            this.buttonCheckBox.Name = "buttonCheckBox";
-            this.buttonCheckBox.Size = new System.Drawing.Size(73, 17);
-            this.buttonCheckBox.TabIndex = 2;
-            this.buttonCheckBox.TabStop = true;
-            this.buttonCheckBox.Text = "Checkbox";
-            this.buttonCheckBox.UseVisualStyleBackColor = true;
-            // 
             // buttonEnable
             // 
             this.buttonEnable.AutoSize = true;
@@ -79,6 +69,17 @@
             this.buttonEnable.Text = "Enable";
             this.buttonEnable.UseVisualStyleBackColor = true;
             this.buttonEnable.CheckedChanged += new System.EventHandler(this.buttonEnable_CheckedChanged);
+            // 
+            // buttonCheckBox
+            // 
+            this.buttonCheckBox.AutoSize = true;
+            this.buttonCheckBox.Location = new System.Drawing.Point(6, 42);
+            this.buttonCheckBox.Name = "buttonCheckBox";
+            this.buttonCheckBox.Size = new System.Drawing.Size(73, 17);
+            this.buttonCheckBox.TabIndex = 2;
+            this.buttonCheckBox.TabStop = true;
+            this.buttonCheckBox.Text = "Checkbox";
+            this.buttonCheckBox.UseVisualStyleBackColor = true;
             // 
             // WASD
             // 

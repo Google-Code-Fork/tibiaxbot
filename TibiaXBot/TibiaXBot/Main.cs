@@ -19,6 +19,7 @@ namespace TibiaXBot
         public Form frmWASD;
         public Form frmOutFit;
         public Form frmSpammer;
+        public Form frmAbout;
 
         public Main()
         {
@@ -31,6 +32,7 @@ namespace TibiaXBot
             frmWASD = new WASD();
             frmSpammer = new Spammer.Spammer();
             frmOutFit = new Outfit();
+            frmAbout = new About();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +48,31 @@ namespace TibiaXBot
         private void button3_Click(object sender, EventArgs e)
         {
             frmOutFit.ShowDialog();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout.Show();
+        }
+
+        private void wASDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmWASD.Show();
+        }
+
+        private void spammerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSpammer.Show();
+        }
+
+        private void outfitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOutFit.Show();
         }
     }
 }

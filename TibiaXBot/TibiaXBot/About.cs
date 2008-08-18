@@ -6,24 +6,24 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Tibia;
-using Tibia.Objects;
 
 namespace TibiaXBot
 {
-    public partial class Outfit : Form
+    public partial class About : Form
     {
-        public Client client;
-        public Player player;
-        public Tibia.Objects.Console console;
-        public Outfit()
+        public About()
         {
             InitializeComponent();
         }
 
-        private void Outfit_Load(object sender, EventArgs e)
+        private void About_Load(object sender, EventArgs e)
         {
+            this.Text = "About TibiaXBot";
+        }
 
+        private void b_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

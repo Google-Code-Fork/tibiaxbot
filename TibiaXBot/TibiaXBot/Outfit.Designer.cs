@@ -32,10 +32,10 @@
             this.listboxOutfits = new System.Windows.Forms.ListBox();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
             this.Addons = new System.Windows.Forms.GroupBox();
-            this.buttonAddonOne = new System.Windows.Forms.RadioButton();
-            this.buttonAddonTwo = new System.Windows.Forms.RadioButton();
-            this.buttonAddonNone = new System.Windows.Forms.RadioButton();
             this.buttonAddonBoth = new System.Windows.Forms.RadioButton();
+            this.buttonAddonNone = new System.Windows.Forms.RadioButton();
+            this.buttonAddonTwo = new System.Windows.Forms.RadioButton();
+            this.buttonAddonOne = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.Addons.SuspendLayout();
             this.SuspendLayout();
@@ -81,27 +81,16 @@
             this.Addons.TabStop = false;
             this.Addons.Text = "Addons";
             // 
-            // buttonAddonOne
+            // buttonAddonBoth
             // 
-            this.buttonAddonOne.AutoSize = true;
-            this.buttonAddonOne.Location = new System.Drawing.Point(6, 19);
-            this.buttonAddonOne.Name = "buttonAddonOne";
-            this.buttonAddonOne.Size = new System.Drawing.Size(45, 17);
-            this.buttonAddonOne.TabIndex = 0;
-            this.buttonAddonOne.TabStop = true;
-            this.buttonAddonOne.Text = "One";
-            this.buttonAddonOne.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddonTwo
-            // 
-            this.buttonAddonTwo.AutoSize = true;
-            this.buttonAddonTwo.Location = new System.Drawing.Point(6, 42);
-            this.buttonAddonTwo.Name = "buttonAddonTwo";
-            this.buttonAddonTwo.Size = new System.Drawing.Size(46, 17);
-            this.buttonAddonTwo.TabIndex = 1;
-            this.buttonAddonTwo.TabStop = true;
-            this.buttonAddonTwo.Text = "Two";
-            this.buttonAddonTwo.UseVisualStyleBackColor = true;
+            this.buttonAddonBoth.AutoSize = true;
+            this.buttonAddonBoth.Location = new System.Drawing.Point(6, 65);
+            this.buttonAddonBoth.Name = "buttonAddonBoth";
+            this.buttonAddonBoth.Size = new System.Drawing.Size(47, 17);
+            this.buttonAddonBoth.TabIndex = 3;
+            this.buttonAddonBoth.TabStop = true;
+            this.buttonAddonBoth.Text = "Both";
+            this.buttonAddonBoth.UseVisualStyleBackColor = true;
             // 
             // buttonAddonNone
             // 
@@ -114,16 +103,27 @@
             this.buttonAddonNone.Text = "None";
             this.buttonAddonNone.UseVisualStyleBackColor = true;
             // 
-            // buttonAddonBoth
+            // buttonAddonTwo
             // 
-            this.buttonAddonBoth.AutoSize = true;
-            this.buttonAddonBoth.Location = new System.Drawing.Point(6, 65);
-            this.buttonAddonBoth.Name = "buttonAddonBoth";
-            this.buttonAddonBoth.Size = new System.Drawing.Size(47, 17);
-            this.buttonAddonBoth.TabIndex = 3;
-            this.buttonAddonBoth.TabStop = true;
-            this.buttonAddonBoth.Text = "Both";
-            this.buttonAddonBoth.UseVisualStyleBackColor = true;
+            this.buttonAddonTwo.AutoSize = true;
+            this.buttonAddonTwo.Location = new System.Drawing.Point(6, 42);
+            this.buttonAddonTwo.Name = "buttonAddonTwo";
+            this.buttonAddonTwo.Size = new System.Drawing.Size(62, 17);
+            this.buttonAddonTwo.TabIndex = 1;
+            this.buttonAddonTwo.TabStop = true;
+            this.buttonAddonTwo.Text = "Second";
+            this.buttonAddonTwo.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddonOne
+            // 
+            this.buttonAddonOne.AutoSize = true;
+            this.buttonAddonOne.Location = new System.Drawing.Point(6, 19);
+            this.buttonAddonOne.Name = "buttonAddonOne";
+            this.buttonAddonOne.Size = new System.Drawing.Size(44, 17);
+            this.buttonAddonOne.TabIndex = 0;
+            this.buttonAddonOne.TabStop = true;
+            this.buttonAddonOne.Text = "First";
+            this.buttonAddonOne.UseVisualStyleBackColor = true;
             // 
             // Outfit
             // 

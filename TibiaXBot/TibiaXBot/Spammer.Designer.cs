@@ -50,10 +50,9 @@
             this.httpwwwtibiatekcomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httptpforumsorgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httptibiaapigooglecodecomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.specialThanksToTibiaAPIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.madeByJesperKladdenHttptpforumsorgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abhoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -290,7 +289,7 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.linksToolStripMenuItem,
-            this.specialThanksToTibiaAPIToolStripMenuItem});
+            this.closeToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.menuToolStripMenuItem.Text = "Menu";
@@ -302,7 +301,7 @@
             this.httptpforumsorgToolStripMenuItem,
             this.httptibiaapigooglecodecomToolStripMenuItem});
             this.linksToolStripMenuItem.Name = "linksToolStripMenuItem";
-            this.linksToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
+            this.linksToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.linksToolStripMenuItem.Text = "Links";
             // 
             // httpwwwtibiatekcomToolStripMenuItem
@@ -326,46 +325,40 @@
             this.httptibiaapigooglecodecomToolStripMenuItem.Text = "TibiaAPI";
             this.httptibiaapigooglecodecomToolStripMenuItem.Click += new System.EventHandler(this.httptibiaapigooglecodecomToolStripMenuItem_Click);
             // 
-            // specialThanksToTibiaAPIToolStripMenuItem
+            // closeToolStripMenuItem
             // 
-            this.specialThanksToTibiaAPIToolStripMenuItem.Name = "specialThanksToTibiaAPIToolStripMenuItem";
-            this.specialThanksToTibiaAPIToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
-            this.specialThanksToTibiaAPIToolStripMenuItem.Text = "Special thanks to TibiaAPI";
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.madeByJesperKladdenHttptpforumsorgToolStripMenuItem,
-            this.usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem});
+            this.abhoutToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.aboutToolStripMenuItem.Text = "Help";
             // 
-            // madeByJesperKladdenHttptpforumsorgToolStripMenuItem
+            // abhoutToolStripMenuItem
             // 
-            this.madeByJesperKladdenHttptpforumsorgToolStripMenuItem.Name = "madeByJesperKladdenHttptpforumsorgToolStripMenuItem";
-            this.madeByJesperKladdenHttptpforumsorgToolStripMenuItem.Size = new System.Drawing.Size(343, 22);
-            this.madeByJesperKladdenHttptpforumsorgToolStripMenuItem.Text = "Made by Jesper_Kladden @ http://tpforums.org";
-            // 
-            // usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem
-            // 
-            this.usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem.Name = "usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem";
-            this.usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem.Size = new System.Drawing.Size(343, 22);
-            this.usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem.Text = "Using Packet.dll (Azura/Stiju), and TibiaAPI (Ian/Ame)";
+            this.abhoutToolStripMenuItem.Name = "abhoutToolStripMenuItem";
+            this.abhoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abhoutToolStripMenuItem.Text = "About";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 132);
+            this.label8.Location = new System.Drawing.Point(6, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 13);
+            this.label8.Size = new System.Drawing.Size(105, 13);
             this.label8.TabIndex = 9;
-            this.label8.Text = "You can use <name>, to make";
+            this.label8.Text = "Use <name> to send";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 151);
+            this.label9.Location = new System.Drawing.Point(9, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 13);
             this.label9.TabIndex = 10;
@@ -409,9 +402,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(303, 192);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 17);
+            this.checkBox1.Size = new System.Drawing.Size(175, 17);
             this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Auto-Update Online List";
+            this.checkBox1.Text = "Auto-Update Online Players List";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -475,16 +468,15 @@
         private System.Windows.Forms.ToolStripMenuItem httpwwwtibiatekcomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem httptpforumsorgToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem httptibiaapigooglecodecomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem specialThanksToTibiaAPIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem madeByJesperKladdenHttptpforumsorgToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usingPacketdllAzuraStijuAndTibiaAPIIanAmeToolStripMenuItem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericInterval;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Timer timerAutoUpdateOnlineList;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abhoutToolStripMenuItem;
     }
 }
 

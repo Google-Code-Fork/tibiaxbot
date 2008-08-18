@@ -31,5 +31,10 @@ namespace TibiaXBot
         {
 
         }
+
+        private void buttonKeyboard_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,7 @@
+﻿*ToDo List*
+*Updated: August 18 by aluwama*
+
+1.put the outfits in a list then give to the user to select the outfit
+2.finish the gui stuff, fix the icon
+3.maybe an updater, would be great
+4.for the updater, we need to use an inihandler
