@@ -29,7 +29,7 @@ namespace TibiaXBot
         {
             client = Tibia.Util.ClientChooser.ShowBox();
             frmWASD = new WASD();
-            frmSpammer = new Spammer();
+            frmSpammer = new Spammer.Spammer();
             frmOutFit = new Outfit();
         }
 
