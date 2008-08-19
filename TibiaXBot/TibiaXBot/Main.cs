@@ -35,7 +35,7 @@ namespace TibiaXBot
 {
     public partial class Main : Form
     {
-        public Client client;
+        public Client client = Tibia.Util.ClientChooser.ShowBox();
         public Player player;
         public Tibia.Objects.Console console;
         public Form frmWASD;
@@ -43,6 +43,7 @@ namespace TibiaXBot
         public Form frmSpammer;
         public Form frmAbout;
         public Form frmIPChanger;
+
         public Main()
         {
             InitializeComponent();
@@ -50,27 +51,27 @@ namespace TibiaXBot
 
         private void Main_Load(object sender, EventArgs e)
         {
-            client = Tibia.Util.ClientChooser.ShowBox();
+           
             frmWASD = new WASD(client);
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
-            frmIPChanger = new IpChanger();
+            frmIPChanger = new IpChanger(client);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmWASD.Show();
+            frmWASD.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmSpammer.Show();
+            frmSpammer.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frmOutFit.Show();
+            frmOutFit.ShowDialog();
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,27 +81,33 @@ namespace TibiaXBot
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAbout.Show();
+            frmAbout.ShowDialog();
         }
 
         private void wASDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmWASD.Show();
+            frmWASD.ShowDialog();
         }
 
         private void spammerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSpammer.Show();
+            frmSpammer.ShowDialog();
         }
 
         private void outfitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmOutFit.Show();
+
+            frmOutFit.ShowDialog();
         }
 
         private void iPChangerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmIPChanger.Show();
+            frmIPChanger.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmIPChanger.ShowDialog();
         }
     }
 }

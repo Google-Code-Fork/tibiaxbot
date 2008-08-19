@@ -14,7 +14,8 @@ namespace TibiaXBot
     public partial class IpChanger : Form
     {
         private Client client;
-        public IpChanger()
+
+        public IpChanger(Client client)
         {
             InitializeComponent();
         }
@@ -23,6 +24,11 @@ namespace TibiaXBot
         {
             client = Tibia.Util.ClientChooser.ShowBox();
             client.SetOT(tb_ip.Text, (short.Parse(tb_port.Text)));
+        }
+
+        private void IpChanger_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

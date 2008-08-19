@@ -37,9 +37,10 @@
             this.outfitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spammerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wASDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iPChangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPChangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
             this.m_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,6 +127,13 @@
             this.wASDToolStripMenuItem.Text = "WASD";
             this.wASDToolStripMenuItem.Click += new System.EventHandler(this.wASDToolStripMenuItem_Click);
             // 
+            // iPChangerToolStripMenuItem
+            // 
+            this.iPChangerToolStripMenuItem.Name = "iPChangerToolStripMenuItem";
+            this.iPChangerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iPChangerToolStripMenuItem.Text = "IP Changer";
+            this.iPChangerToolStripMenuItem.Click += new System.EventHandler(this.iPChangerToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
@@ -140,18 +148,22 @@
             this.closeToolStripMenuItem.Text = "Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
-            // iPChangerToolStripMenuItem
+            // button4
             // 
-            this.iPChangerToolStripMenuItem.Name = "iPChangerToolStripMenuItem";
-            this.iPChangerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.iPChangerToolStripMenuItem.Text = "IP Changer";
-            this.iPChangerToolStripMenuItem.Click += new System.EventHandler(this.iPChangerToolStripMenuItem_Click);
+            this.button4.Location = new System.Drawing.Point(12, 125);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 25);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "IPChanger";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(104, 131);
+            this.ClientSize = new System.Drawing.Size(104, 161);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -182,6 +194,7 @@
         private System.Windows.Forms.ToolStripMenuItem spammerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wASDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iPChangerToolStripMenuItem;
+        private System.Windows.Forms.Button button4;
     }
 }
 

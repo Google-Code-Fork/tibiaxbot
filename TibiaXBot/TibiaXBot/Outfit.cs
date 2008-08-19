@@ -57,7 +57,6 @@ namespace TibiaXBot
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
-            client = Tibia.Util.ClientChooser.ShowBox();
             player = client.GetPlayer();
             if (buttonEnable.Checked)
             {

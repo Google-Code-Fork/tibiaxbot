@@ -69,7 +69,6 @@ namespace TibiaXBot
             if (buttonCheckBox.Checked)
             {
                 buttonEnable.Enabled = true;
-                InstallKBHook();
             }
             else
             {
