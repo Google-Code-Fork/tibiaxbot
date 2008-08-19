@@ -42,7 +42,6 @@ namespace TibiaXBot
         {
             InitializeComponent();
         }
-
         private void WASD_Load(object sender, EventArgs e)
         {
 
@@ -59,6 +58,10 @@ namespace TibiaXBot
             {
                 buttonEnable.Enabled = false;
             }
+            else
+            {
+                buttonEnable.Enabled = true;
+            }
         }
 
         private void buttonCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -66,6 +69,11 @@ namespace TibiaXBot
             if (buttonCheckBox.Checked)
             {
                 buttonEnable.Enabled = true;
+                InstallKBHook();
+            }
+            else
+            {
+                buttonEnable.Enabled = false;
             }
         }
     }

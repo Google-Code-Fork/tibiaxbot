@@ -42,7 +42,7 @@ namespace TibiaXBot
         public Form frmOutFit;
         public Form frmSpammer;
         public Form frmAbout;
-
+        public Form frmIPChanger;
         public Main()
         {
             InitializeComponent();
@@ -55,6 +55,7 @@ namespace TibiaXBot
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
+            frmIPChanger = new IpChanger();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,6 +96,11 @@ namespace TibiaXBot
         private void outfitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmOutFit.Show();
+        }
+
+        private void iPChangerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIPChanger.Show();
         }
     }
 }

@@ -39,6 +39,7 @@
             this.wASDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iPChangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.m_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +99,8 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.outfitToolStripMenuItem,
             this.spammerToolStripMenuItem,
-            this.wASDToolStripMenuItem});
+            this.wASDToolStripMenuItem,
+            this.iPChangerToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -138,6 +140,13 @@
             this.closeToolStripMenuItem.Text = "Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
+            // iPChangerToolStripMenuItem
+            // 
+            this.iPChangerToolStripMenuItem.Name = "iPChangerToolStripMenuItem";
+            this.iPChangerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iPChangerToolStripMenuItem.Text = "IP Changer";
+            this.iPChangerToolStripMenuItem.Click += new System.EventHandler(this.iPChangerToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +181,7 @@
         private System.Windows.Forms.ToolStripMenuItem outfitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem spammerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wASDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iPChangerToolStripMenuItem;
     }
 }
 

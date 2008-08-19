@@ -45,7 +45,7 @@
             this.groupBox1.Controls.Add(this.listboxOutfits);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(127, 137);
+            this.groupBox1.Size = new System.Drawing.Size(125, 135);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Outfits";
@@ -55,13 +55,13 @@
             this.listboxOutfits.FormattingEnabled = true;
             this.listboxOutfits.Location = new System.Drawing.Point(6, 19);
             this.listboxOutfits.Name = "listboxOutfits";
-            this.listboxOutfits.Size = new System.Drawing.Size(111, 108);
+            this.listboxOutfits.Size = new System.Drawing.Size(110, 108);
             this.listboxOutfits.TabIndex = 0;
             // 
             // buttonEnable
             // 
             this.buttonEnable.AutoSize = true;
-            this.buttonEnable.Location = new System.Drawing.Point(151, 132);
+            this.buttonEnable.Location = new System.Drawing.Point(143, 130);
             this.buttonEnable.Name = "buttonEnable";
             this.buttonEnable.Size = new System.Drawing.Size(59, 17);
             this.buttonEnable.TabIndex = 1;
@@ -75,9 +75,9 @@
             this.Addons.Controls.Add(this.buttonAddonNone);
             this.Addons.Controls.Add(this.buttonAddonTwo);
             this.Addons.Controls.Add(this.buttonAddonOne);
-            this.Addons.Location = new System.Drawing.Point(145, 12);
+            this.Addons.Location = new System.Drawing.Point(143, 12);
             this.Addons.Name = "Addons";
-            this.Addons.Size = new System.Drawing.Size(91, 114);
+            this.Addons.Size = new System.Drawing.Size(74, 114);
             this.Addons.TabIndex = 2;
             this.Addons.TabStop = false;
             this.Addons.Text = "Addons";
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 164);
+            this.ClientSize = new System.Drawing.Size(234, 166);
             this.Controls.Add(this.Addons);
             this.Controls.Add(this.buttonEnable);
             this.Controls.Add(this.groupBox1);

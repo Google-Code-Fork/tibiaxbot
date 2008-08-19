@@ -52,7 +52,6 @@ namespace TibiaXBot
             for (int i = 0; i <= names.Length - 1; i++)
             {
                 listboxOutfits.Items.Add(names[i]);
-
             }
         }
 

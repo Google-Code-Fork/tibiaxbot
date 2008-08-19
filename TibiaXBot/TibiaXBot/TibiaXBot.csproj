@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -54,6 +54,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="IpChanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IpChanger.Designer.cs">
+      <DependentUpon>IpChanger.cs</DependentUpon>
+    </Compile>
     <Compile Include="Spammer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IpChanger.resx">
+      <DependentUpon>IpChanger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Spammer.resx">
       <DependentUpon>Spammer.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +107,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="LICENSE" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,7 +131,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GNU License.txt" />
     <Content Include="ToDo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

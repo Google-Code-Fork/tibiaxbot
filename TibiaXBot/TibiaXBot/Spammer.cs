@@ -43,8 +43,6 @@ namespace Spammer
         public Spammer frmMain;
         public Form frmGuild;
 
-
-
         public Spammer(Client client)
         {
             InitializeComponent();
@@ -53,6 +51,7 @@ namespace Spammer
         private void Main_Load(object sender, EventArgs e)
         {
             console = new Tibia.Objects.Console(client);
+            client = Tibia.Util.ClientChooser.ShowBox();
         }
 
         private void buttonGetPlayers_Click(object sender, EventArgs e)
