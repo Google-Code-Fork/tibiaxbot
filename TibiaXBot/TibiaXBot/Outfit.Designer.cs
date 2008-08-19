@@ -67,6 +67,7 @@
             this.buttonEnable.TabIndex = 1;
             this.buttonEnable.Text = "Enable";
             this.buttonEnable.UseVisualStyleBackColor = true;
+            this.buttonEnable.CheckedChanged += new System.EventHandler(this.buttonEnable_CheckedChanged);
             // 
             // Addons
             // 

@@ -44,15 +44,6 @@
             this.textMSGSent = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timerInfo = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.httpwwwtibiatekcomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.httptpforumsorgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.httptibiaapigooglecodecomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abhoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,14 +51,13 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.timerAutoUpdateOnlineList = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericInterval)).BeginInit();
             this.SuspendLayout();
             // 
             // listboxPlayersOnline
             // 
             this.listboxPlayersOnline.FormattingEnabled = true;
-            this.listboxPlayersOnline.Location = new System.Drawing.Point(177, 41);
+            this.listboxPlayersOnline.Location = new System.Drawing.Point(174, 35);
             this.listboxPlayersOnline.Name = "listboxPlayersOnline";
             this.listboxPlayersOnline.Size = new System.Drawing.Size(120, 160);
             this.listboxPlayersOnline.TabIndex = 0;
@@ -76,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 25);
+            this.label1.Location = new System.Drawing.Point(190, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 1;
@@ -84,7 +74,7 @@
             // 
             // textboxSpamText
             // 
-            this.textboxSpamText.Location = new System.Drawing.Point(12, 54);
+            this.textboxSpamText.Location = new System.Drawing.Point(9, 35);
             this.textboxSpamText.Name = "textboxSpamText";
             this.textboxSpamText.Size = new System.Drawing.Size(159, 65);
             this.textboxSpamText.TabIndex = 2;
@@ -93,7 +83,7 @@
             // buttonActivate
             // 
             this.buttonActivate.AutoSize = true;
-            this.buttonActivate.Location = new System.Drawing.Point(12, 31);
+            this.buttonActivate.Location = new System.Drawing.Point(9, 12);
             this.buttonActivate.Name = "buttonActivate";
             this.buttonActivate.Size = new System.Drawing.Size(112, 17);
             this.buttonActivate.TabIndex = 3;
@@ -103,7 +93,7 @@
             // 
             // buttonGetPlayers
             // 
-            this.buttonGetPlayers.Location = new System.Drawing.Point(303, 159);
+            this.buttonGetPlayers.Location = new System.Drawing.Point(301, 139);
             this.buttonGetPlayers.Name = "buttonGetPlayers";
             this.buttonGetPlayers.Size = new System.Drawing.Size(157, 27);
             this.buttonGetPlayers.TabIndex = 4;
@@ -194,7 +184,7 @@
             "Xantera",
             "Xerena",
             "Zanera"});
-            this.textPlayerWorld.Location = new System.Drawing.Point(302, 132);
+            this.textPlayerWorld.Location = new System.Drawing.Point(300, 112);
             this.textPlayerWorld.Name = "textPlayerWorld";
             this.textPlayerWorld.Size = new System.Drawing.Size(158, 21);
             this.textPlayerWorld.TabIndex = 5;
@@ -207,7 +197,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textMSGSent);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(303, 30);
+            this.groupBox1.Location = new System.Drawing.Point(299, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(247, 93);
             this.groupBox1.TabIndex = 6;
@@ -273,83 +263,10 @@
             this.timerInfo.Enabled = true;
             this.timerInfo.Tick += new System.EventHandler(this.timerInfo_Tick);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(558, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.linksToolStripMenuItem,
-            this.closeToolStripMenuItem});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // linksToolStripMenuItem
-            // 
-            this.linksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.httpwwwtibiatekcomToolStripMenuItem,
-            this.httptpforumsorgToolStripMenuItem,
-            this.httptibiaapigooglecodecomToolStripMenuItem});
-            this.linksToolStripMenuItem.Name = "linksToolStripMenuItem";
-            this.linksToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.linksToolStripMenuItem.Text = "Links";
-            // 
-            // httpwwwtibiatekcomToolStripMenuItem
-            // 
-            this.httpwwwtibiatekcomToolStripMenuItem.Name = "httpwwwtibiatekcomToolStripMenuItem";
-            this.httpwwwtibiatekcomToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.httpwwwtibiatekcomToolStripMenuItem.Text = "TibiaTek";
-            this.httpwwwtibiatekcomToolStripMenuItem.Click += new System.EventHandler(this.httpwwwtibiatekcomToolStripMenuItem_Click);
-            // 
-            // httptpforumsorgToolStripMenuItem
-            // 
-            this.httptpforumsorgToolStripMenuItem.Name = "httptpforumsorgToolStripMenuItem";
-            this.httptpforumsorgToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.httptpforumsorgToolStripMenuItem.Text = "Tibia Programming";
-            this.httptpforumsorgToolStripMenuItem.Click += new System.EventHandler(this.httptpforumsorgToolStripMenuItem_Click);
-            // 
-            // httptibiaapigooglecodecomToolStripMenuItem
-            // 
-            this.httptibiaapigooglecodecomToolStripMenuItem.Name = "httptibiaapigooglecodecomToolStripMenuItem";
-            this.httptibiaapigooglecodecomToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.httptibiaapigooglecodecomToolStripMenuItem.Text = "TibiaAPI";
-            this.httptibiaapigooglecodecomToolStripMenuItem.Click += new System.EventHandler(this.httptibiaapigooglecodecomToolStripMenuItem_Click);
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abhoutToolStripMenuItem});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.aboutToolStripMenuItem.Text = "Help";
-            // 
-            // abhoutToolStripMenuItem
-            // 
-            this.abhoutToolStripMenuItem.Name = "abhoutToolStripMenuItem";
-            this.abhoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.abhoutToolStripMenuItem.Text = "About";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 121);
+            this.label8.Location = new System.Drawing.Point(6, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(105, 13);
             this.label8.TabIndex = 9;
@@ -358,7 +275,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 140);
+            this.label9.Location = new System.Drawing.Point(6, 132);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 13);
             this.label9.TabIndex = 10;
@@ -367,7 +284,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(464, 135);
+            this.label10.Location = new System.Drawing.Point(464, 115);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 13);
             this.label10.TabIndex = 11;
@@ -376,7 +293,7 @@
             // numericInterval
             // 
             this.numericInterval.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numericInterval.Location = new System.Drawing.Point(467, 159);
+            this.numericInterval.Location = new System.Drawing.Point(467, 139);
             this.numericInterval.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -400,7 +317,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(303, 192);
+            this.checkBox1.Location = new System.Drawing.Point(301, 178);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(175, 17);
             this.checkBox1.TabIndex = 13;
@@ -417,7 +334,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 214);
+            this.ClientSize = new System.Drawing.Size(558, 200);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.numericInterval);
             this.Controls.Add(this.label10);
@@ -430,15 +347,12 @@
             this.Controls.Add(this.textboxSpamText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listboxPlayersOnline);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Spammer";
             this.Text = "Spammer";
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericInterval)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -458,25 +372,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label textMSGSent;
         private System.Windows.Forms.Timer timerInfo;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem linksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem httpwwwtibiatekcomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem httptpforumsorgToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem httptibiaapigooglecodecomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericInterval;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Timer timerAutoUpdateOnlineList;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abhoutToolStripMenuItem;
     }
 }
 

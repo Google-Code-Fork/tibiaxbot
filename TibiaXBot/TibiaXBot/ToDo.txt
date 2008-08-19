@@ -1,7 +1,37 @@
-﻿*ToDo List*
-*Updated: August 18 by aluwama*
+﻿This is a To-Do list made for TibiaXBot. Everything that is on here
+is stuff that we will add or are adding, or maybe already added.
 
-1.put the outfits in a list then give to the user to select the outfit
-2.finish the gui stuff, fix the icon
-3.maybe an updater, would be great
-4.for the updater, we need to use an inihandler
+What you see here is nothing you should even care about, because 
+only the programmers should.
+
+If you want to become a programmer for TibiaXBot, please write to 
+Jesper_Kladden or Aluwama. It would be the best if you wrote to us both,
+because we wont add you to the team without both have been talking about it.
+
+
+ToDo:
+
+Spammer, STARTED
+1# Write Messages to people - DONE // Jesper
+2# Adding so you swap between characters after 20 messages - NOT DONE
+3#
+4#
+
+-----
+
+Outfit, STARTED
+1# Getting Outfits into listbox - DONE // Jesper
+2#
+3#
+4#
+
+-----
+
+WASD, - NOT STARTED
+1#
+2#
+3#
+4#
+
+-----
+

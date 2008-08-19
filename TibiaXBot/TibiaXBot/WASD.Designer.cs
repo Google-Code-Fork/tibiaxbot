@@ -80,6 +80,7 @@
             this.buttonCheckBox.TabStop = true;
             this.buttonCheckBox.Text = "Checkbox";
             this.buttonCheckBox.UseVisualStyleBackColor = true;
+            this.buttonCheckBox.CheckedChanged += new System.EventHandler(this.buttonCheckBox_CheckedChanged);
             // 
             // WASD
             // 
