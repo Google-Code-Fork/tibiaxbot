@@ -29,39 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listboxOutfits = new System.Windows.Forms.ListBox();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
-            this.Addons = new System.Windows.Forms.GroupBox();
             this.buttonAddonBoth = new System.Windows.Forms.RadioButton();
             this.buttonAddonNone = new System.Windows.Forms.RadioButton();
             this.buttonAddonTwo = new System.Windows.Forms.RadioButton();
             this.buttonAddonOne = new System.Windows.Forms.RadioButton();
+            this.comboboxOutfits = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            this.Addons.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listboxOutfits);
+            this.groupBox1.Controls.Add(this.buttonAddonNone);
+            this.groupBox1.Controls.Add(this.buttonEnable);
+            this.groupBox1.Controls.Add(this.buttonAddonBoth);
+            this.groupBox1.Controls.Add(this.comboboxOutfits);
+            this.groupBox1.Controls.Add(this.buttonAddonOne);
+            this.groupBox1.Controls.Add(this.buttonAddonTwo);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(125, 135);
+            this.groupBox1.Size = new System.Drawing.Size(129, 114);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Outfits";
             // 
-            // listboxOutfits
-            // 
-            this.listboxOutfits.FormattingEnabled = true;
-            this.listboxOutfits.Location = new System.Drawing.Point(6, 19);
-            this.listboxOutfits.Name = "listboxOutfits";
-            this.listboxOutfits.Size = new System.Drawing.Size(110, 108);
-            this.listboxOutfits.TabIndex = 0;
-            // 
             // buttonEnable
             // 
             this.buttonEnable.AutoSize = true;
-            this.buttonEnable.Location = new System.Drawing.Point(143, 130);
+            this.buttonEnable.Location = new System.Drawing.Point(31, 92);
             this.buttonEnable.Name = "buttonEnable";
             this.buttonEnable.Size = new System.Drawing.Size(59, 17);
             this.buttonEnable.TabIndex = 1;
@@ -69,23 +64,10 @@
             this.buttonEnable.UseVisualStyleBackColor = true;
             this.buttonEnable.CheckedChanged += new System.EventHandler(this.buttonEnable_CheckedChanged);
             // 
-            // Addons
-            // 
-            this.Addons.Controls.Add(this.buttonAddonBoth);
-            this.Addons.Controls.Add(this.buttonAddonNone);
-            this.Addons.Controls.Add(this.buttonAddonTwo);
-            this.Addons.Controls.Add(this.buttonAddonOne);
-            this.Addons.Location = new System.Drawing.Point(143, 12);
-            this.Addons.Name = "Addons";
-            this.Addons.Size = new System.Drawing.Size(74, 114);
-            this.Addons.TabIndex = 2;
-            this.Addons.TabStop = false;
-            this.Addons.Text = "Addons";
-            // 
             // buttonAddonBoth
             // 
             this.buttonAddonBoth.AutoSize = true;
-            this.buttonAddonBoth.Location = new System.Drawing.Point(6, 65);
+            this.buttonAddonBoth.Location = new System.Drawing.Point(6, 69);
             this.buttonAddonBoth.Name = "buttonAddonBoth";
             this.buttonAddonBoth.Size = new System.Drawing.Size(47, 17);
             this.buttonAddonBoth.TabIndex = 3;
@@ -96,7 +78,7 @@
             // buttonAddonNone
             // 
             this.buttonAddonNone.AutoSize = true;
-            this.buttonAddonNone.Location = new System.Drawing.Point(6, 88);
+            this.buttonAddonNone.Location = new System.Drawing.Point(63, 69);
             this.buttonAddonNone.Name = "buttonAddonNone";
             this.buttonAddonNone.Size = new System.Drawing.Size(51, 17);
             this.buttonAddonNone.TabIndex = 2;
@@ -107,7 +89,7 @@
             // buttonAddonTwo
             // 
             this.buttonAddonTwo.AutoSize = true;
-            this.buttonAddonTwo.Location = new System.Drawing.Point(6, 42);
+            this.buttonAddonTwo.Location = new System.Drawing.Point(63, 46);
             this.buttonAddonTwo.Name = "buttonAddonTwo";
             this.buttonAddonTwo.Size = new System.Drawing.Size(62, 17);
             this.buttonAddonTwo.TabIndex = 1;
@@ -118,7 +100,7 @@
             // buttonAddonOne
             // 
             this.buttonAddonOne.AutoSize = true;
-            this.buttonAddonOne.Location = new System.Drawing.Point(6, 19);
+            this.buttonAddonOne.Location = new System.Drawing.Point(6, 46);
             this.buttonAddonOne.Name = "buttonAddonOne";
             this.buttonAddonOne.Size = new System.Drawing.Size(44, 17);
             this.buttonAddonOne.TabIndex = 0;
@@ -126,35 +108,38 @@
             this.buttonAddonOne.Text = "First";
             this.buttonAddonOne.UseVisualStyleBackColor = true;
             // 
+            // comboboxOutfits
+            // 
+            this.comboboxOutfits.FormattingEnabled = true;
+            this.comboboxOutfits.Location = new System.Drawing.Point(6, 19);
+            this.comboboxOutfits.Name = "comboboxOutfits";
+            this.comboboxOutfits.Size = new System.Drawing.Size(113, 21);
+            this.comboboxOutfits.TabIndex = 3;
+            // 
             // Outfit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 166);
-            this.Controls.Add(this.Addons);
-            this.Controls.Add(this.buttonEnable);
+            this.ClientSize = new System.Drawing.Size(153, 139);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Outfit";
             this.Text = "Outfit";
             this.Load += new System.EventHandler(this.Outfit_Load);
             this.groupBox1.ResumeLayout(false);
-            this.Addons.ResumeLayout(false);
-            this.Addons.PerformLayout();
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listboxOutfits;
         private System.Windows.Forms.CheckBox buttonEnable;
-        private System.Windows.Forms.GroupBox Addons;
         private System.Windows.Forms.RadioButton buttonAddonNone;
         private System.Windows.Forms.RadioButton buttonAddonTwo;
         private System.Windows.Forms.RadioButton buttonAddonOne;
         private System.Windows.Forms.RadioButton buttonAddonBoth;
+        private System.Windows.Forms.ComboBox comboboxOutfits;
     }
 }
