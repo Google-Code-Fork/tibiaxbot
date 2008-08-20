@@ -39,31 +39,43 @@
             this.wASDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iPChangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.m_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(103, 27);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "WASD";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseLeave += new System.EventHandler(this.b1mouseleave);
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.b1mouseenter);
             // 
             // button2
             // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(12, 58);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 25);
             this.button2.TabIndex = 1;
             this.button2.Text = "Spammer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseLeave += new System.EventHandler(this.b2mouseleave);
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.b2mouseenter);
             // 
             // m_Menu
             // 
@@ -95,7 +107,7 @@
             this.wASDToolStripMenuItem,
             this.iPChangerToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // outfitToolStripMenuItem
@@ -129,19 +141,9 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.closeToolStripMenuItem.Text = "Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(103, 58);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 25);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "IPChanger";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -150,22 +152,41 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click_1);
             // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(103, 58);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 25);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "IPChanger";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseLeave += new System.EventHandler(this.b4mouseleave);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.b4mouseenter);
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Location = new System.Drawing.Point(12, 27);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 25);
             this.button3.TabIndex = 2;
             this.button3.Text = "Outfit";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.MouseLeave += new System.EventHandler(this.b3mouseleave);
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.b3mouseenter);
             // 
             // Main
             // 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -12,7 +12,8 @@
     <AssemblyName>TibiaXBot</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>Resources\tibiaxbot.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <StartupObject>
     </StartupObject>
     <PublishUrl>publish\</PublishUrl>
@@ -135,10 +136,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\button.bmp" />
-    <Content Include="Resources\button_hover.bmp" />
-    <Content Include="Resources\logo.gif" />
-    <Content Include="Resources\tibiaxbot.ico" />
     <Content Include="ToDo.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +175,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

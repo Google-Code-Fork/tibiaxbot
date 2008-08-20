@@ -114,5 +114,45 @@ namespace TibiaXBot
         {
             frmAbout.ShowDialog();
         }
+
+        private void b3mouseenter(object sender, EventArgs e)
+        {
+            button3.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+        }
+
+        private void b3mouseleave(object sender, EventArgs e)
+        {
+            button3.BackgroundImage = Image.FromFile("Resources/button.bmp");
+        }
+
+        private void b1mouseleave(object sender, EventArgs e)
+        {
+            button1.BackgroundImage = Image.FromFile("Resources/button.bmp");
+        }
+
+        private void b1mouseenter(object sender, EventArgs e)
+        {
+            button1.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+        }
+
+        private void b2mouseenter(object sender, EventArgs e)
+        {
+            button2.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+        }
+
+        private void b2mouseleave(object sender, EventArgs e)
+        {
+            button2.BackgroundImage = Image.FromFile("Resources/button.bmp");
+        }
+
+        private void b4mouseenter(object sender, EventArgs e)
+        {
+            button4.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+        }
+
+        private void b4mouseleave(object sender, EventArgs e)
+        {
+            button4.BackgroundImage = Image.FromFile("Resources/button.bmp");
+        }
     }
 }
