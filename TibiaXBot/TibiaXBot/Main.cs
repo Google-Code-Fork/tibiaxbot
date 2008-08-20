@@ -35,14 +35,14 @@ namespace TibiaXBot
 {
     public partial class Main : Form
     {
-        public Client client = Tibia.Util.ClientChooser.ShowBox();
+        
         public Player player;
         public Tibia.Objects.Console console;
         public Form frmWASD;
         public Form frmOutFit;
         public Form frmSpammer;
         public Form frmAbout;
-        public Form frmIPChanger;
+        
 
         public Main()
         {
@@ -51,12 +51,12 @@ namespace TibiaXBot
 
         private void Main_Load(object sender, EventArgs e)
         {
-           
+           Client client = Tibia.Util.ClientChooser.ShowBox();
             frmWASD = new WASD(client);
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
-            frmIPChanger = new IpChanger(client);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,12 +102,12 @@ namespace TibiaXBot
 
         private void iPChangerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmIPChanger.ShowDialog();
+            Tibia.Util.ClientChooser.ShowBox();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmIPChanger.ShowDialog();
+            Tibia.Util.ClientChooser.ShowBox();
         }
     }
 }

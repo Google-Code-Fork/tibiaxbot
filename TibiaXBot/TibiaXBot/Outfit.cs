@@ -35,11 +35,11 @@ namespace TibiaXBot
 {
     public partial class Outfit : Form
     {
-    
+        public String[] names = Enum.GetNames(typeof(Tibia.Constants.OutfitType));
         public Client client;
         public Player player;
         public Tibia.Objects.Console console;
-        
+
 
         public Outfit(Client client)
         {
@@ -48,7 +48,7 @@ namespace TibiaXBot
 
         private void Outfit_Load(object sender, EventArgs e)
         {
-            String[] names = Enum.GetNames(typeof(Tibia.Constants.OutfitType));
+
             for (int i = 0; i <= names.Length - 1; i++)
             {
                 listboxOutfits.Items.Add(names[i]);
@@ -57,10 +57,18 @@ namespace TibiaXBot
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
+
+            client = Tibia.Util.ClientChooser.ShowBox();
             player = client.GetPlayer();
             if (buttonEnable.Checked)
             {
-                listboxOutfits.SelectedItem = player.Outfit;
+                listboxOutfits.Enabled = false;
+                //player.SetOutfit(listboxOutfits.SelectedItem(names), 0, 0, 0, 0, Tibia.Constants.OutfitAddon.None);
+            }
+            else
+            {
+                listboxOutfits.Enabled = true;
+
             }
         }
     }
