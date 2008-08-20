@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Outfit));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
             this.buttonAddonBoth = new System.Windows.Forms.RadioButton();
@@ -56,7 +57,7 @@
             // buttonEnable
             // 
             this.buttonEnable.AutoSize = true;
-            this.buttonEnable.Location = new System.Drawing.Point(31, 92);
+            this.buttonEnable.Location = new System.Drawing.Point(28, 92);
             this.buttonEnable.Name = "buttonEnable";
             this.buttonEnable.Size = new System.Drawing.Size(59, 17);
             this.buttonEnable.TabIndex = 1;
@@ -123,6 +124,7 @@
             this.ClientSize = new System.Drawing.Size(153, 139);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Outfit";
             this.Text = "Outfit";
             this.Load += new System.EventHandler(this.Outfit_Load);

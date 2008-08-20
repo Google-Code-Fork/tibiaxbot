@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TibiaXBot")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The bot that puts unique features infront of other...")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TibiaXBot Team")]
 [assembly: AssemblyProduct("TibiaXBot")]
 [assembly: AssemblyCopyright("Copyright © 2008")]
 [assembly: AssemblyTrademark("")]

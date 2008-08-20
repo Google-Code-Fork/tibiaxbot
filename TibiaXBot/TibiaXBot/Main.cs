@@ -81,7 +81,7 @@ namespace TibiaXBot
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAbout.ShowDialog();
+            
         }
 
         private void wASDToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,6 +108,11 @@ namespace TibiaXBot
         private void button4_Click(object sender, EventArgs e)
         {
             Tibia.Util.ClientChooser.ShowBox();
+        }
+
+        private void aboutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmAbout.ShowDialog();
         }
     }
 }
