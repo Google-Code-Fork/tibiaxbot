@@ -195,5 +195,10 @@ namespace TibiaXBot
         {
             frmOutFit.ShowDialog();
         }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            trayIcon.Visible = false;
+        }
     }
 }

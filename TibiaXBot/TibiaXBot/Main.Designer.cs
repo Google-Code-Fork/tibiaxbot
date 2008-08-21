@@ -130,7 +130,7 @@
             this.exitToolStripMenuItem});
             this.contextTray.Name = "contextTray";
             this.contextTray.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextTray.Size = new System.Drawing.Size(153, 136);
+            this.contextTray.Size = new System.Drawing.Size(130, 114);
             this.contextTray.Opening += new System.ComponentModel.CancelEventHandler(this.contextTray_Opening);
             // 
             // Outfits
@@ -183,6 +183,7 @@
             this.Name = "Main";
             this.Text = "TibiaXBot";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.contextTray.ResumeLayout(false);
             this.ResumeLayout(false);
 
