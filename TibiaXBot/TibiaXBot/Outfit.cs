@@ -57,7 +57,7 @@ namespace TibiaXBot
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
-            Convert.ToInt32(Enum.GetValues(typeof(Tibia.Constants.OutfitType)));
+            
 
             client = Tibia.Util.ClientChooser.ShowBox();
             player = client.GetPlayer();
@@ -65,13 +65,11 @@ namespace TibiaXBot
             {
                // player.SetOutfit(Tibia.Constants.OutfitType + (comboboxOutfits.Text), 0, 0, 0, 0, Tibia.Constants.OutfitAddon.None);
                 comboboxOutfits.Enabled = false;
-                
-                
+                player.Outfit = ((Tibia.Constants.OutfitType)comboboxOutfits.SelectedItem);
             }
             else
             {
                 comboboxOutfits.Enabled = true;
-
             }
         }
     }

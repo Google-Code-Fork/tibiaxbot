@@ -35,14 +35,14 @@ namespace TibiaXBot
 {
     public partial class Main : Form
     {
-        
+
         public Player player;
         public Tibia.Objects.Console console;
         public Form frmWASD;
         public Form frmOutFit;
         public Form frmSpammer;
         public Form frmAbout;
-        
+
 
         public Main()
         {
@@ -51,12 +51,12 @@ namespace TibiaXBot
 
         private void Main_Load(object sender, EventArgs e)
         {
-           Client client = Tibia.Util.ClientChooser.ShowBox();
+            Client client = Tibia.Util.ClientChooser.ShowBox();
             frmWASD = new WASD(client);
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace TibiaXBot
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void wASDToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,6 +153,47 @@ namespace TibiaXBot
         private void b4mouseleave(object sender, EventArgs e)
         {
             button4.BackgroundImage = Image.FromFile("Resources/button.bmp");
+        }
+
+        private void trayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+
+        }
+
+        private void contextTray_Opening(object sender, CancelEventArgs e)
+        {
+
+    }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click_2(object sender, EventArgs e)
+        {
+            frmAbout.ShowDialog();
+        }
+
+        private void wASDToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmWASD.ShowDialog();
+        }
+
+        private void spammerToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmSpammer.ShowDialog();
+        }
+
+        private void Outfits_Click(object sender, EventArgs e)
+        {
+            frmOutFit.ShowDialog();
         }
     }
 }

@@ -32,6 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.b_Close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,11 +74,22 @@
             this.b_Close.UseVisualStyleBackColor = true;
             this.b_Close.Click += new System.EventHandler(this.b_Close_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TibiaXBot.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(103, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(242, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(103, 121);
+            this.ClientSize = new System.Drawing.Size(357, 121);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.b_Close);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -85,6 +98,7 @@
             this.Name = "About";
             this.Text = "About";
             this.Load += new System.EventHandler(this.About_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,5 +110,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button b_Close;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
