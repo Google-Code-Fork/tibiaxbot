@@ -55,18 +55,7 @@ namespace Spammer
         }
 
         private void buttonGetPlayers_Click(object sender, EventArgs e)
-        {
-
-            player = client.GetPlayer();
-            Website.WhoIsOnline(textPlayerWorld.Text, delegate(List<Website.CharOnline> i)
-            {
-                listboxPlayersOnline.Invoke(new EventHandler(delegate
-                    {
-                        for (int o = 0; o < i.Count(); o++)
-                            listboxPlayersOnline.Items.Add(i[o].Name);
-                    }));
-            });
-        }
+        { }
 
         private void timerActivate_Tick(object sender, EventArgs e)
         {
@@ -177,6 +166,25 @@ namespace Spammer
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonGetPlayers_Click_1(object sender, EventArgs e)
+        {
+                        player = client.GetPlayer();
+            Website.WhoIsOnline(textPlayerWorld.Text, delegate(List<Website.CharOnline> i)
+            {
+                listboxPlayersOnline.Invoke(new EventHandler(delegate
+                    {
+                        for (int o = 0; o < i.Count(); o++)
+                            listboxPlayersOnline.Items.Add(i[o].Name);
+                    }));
+            });
+        
+        }
+
+        private void buttonGetPlayers_MouseEnter(object sender, EventArgs e)
+        {
+            buttonGetPlayers.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
         }
         }
     }

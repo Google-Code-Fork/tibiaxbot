@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Outfit));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonAddonNone = new System.Windows.Forms.RadioButton();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
             this.buttonAddonBoth = new System.Windows.Forms.RadioButton();
-            this.buttonAddonNone = new System.Windows.Forms.RadioButton();
-            this.buttonAddonTwo = new System.Windows.Forms.RadioButton();
-            this.buttonAddonOne = new System.Windows.Forms.RadioButton();
             this.comboboxOutfits = new System.Windows.Forms.ComboBox();
+            this.buttonAddonOne = new System.Windows.Forms.RadioButton();
+            this.buttonAddonTwo = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,7 @@
             this.groupBox1.Controls.Add(this.comboboxOutfits);
             this.groupBox1.Controls.Add(this.buttonAddonOne);
             this.groupBox1.Controls.Add(this.buttonAddonTwo);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(129, 114);
@@ -54,9 +55,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Outfits";
             // 
+            // buttonAddonNone
+            // 
+            this.buttonAddonNone.AutoSize = true;
+            this.buttonAddonNone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddonNone.Location = new System.Drawing.Point(63, 69);
+            this.buttonAddonNone.Name = "buttonAddonNone";
+            this.buttonAddonNone.Size = new System.Drawing.Size(51, 17);
+            this.buttonAddonNone.TabIndex = 2;
+            this.buttonAddonNone.TabStop = true;
+            this.buttonAddonNone.Text = "None";
+            this.buttonAddonNone.UseVisualStyleBackColor = true;
+            // 
             // buttonEnable
             // 
             this.buttonEnable.AutoSize = true;
+            this.buttonEnable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonEnable.Location = new System.Drawing.Point(28, 92);
             this.buttonEnable.Name = "buttonEnable";
             this.buttonEnable.Size = new System.Drawing.Size(59, 17);
@@ -68,6 +82,7 @@
             // buttonAddonBoth
             // 
             this.buttonAddonBoth.AutoSize = true;
+            this.buttonAddonBoth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonAddonBoth.Location = new System.Drawing.Point(6, 69);
             this.buttonAddonBoth.Name = "buttonAddonBoth";
             this.buttonAddonBoth.Size = new System.Drawing.Size(47, 17);
@@ -75,39 +90,6 @@
             this.buttonAddonBoth.TabStop = true;
             this.buttonAddonBoth.Text = "Both";
             this.buttonAddonBoth.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddonNone
-            // 
-            this.buttonAddonNone.AutoSize = true;
-            this.buttonAddonNone.Location = new System.Drawing.Point(63, 69);
-            this.buttonAddonNone.Name = "buttonAddonNone";
-            this.buttonAddonNone.Size = new System.Drawing.Size(51, 17);
-            this.buttonAddonNone.TabIndex = 2;
-            this.buttonAddonNone.TabStop = true;
-            this.buttonAddonNone.Text = "None";
-            this.buttonAddonNone.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddonTwo
-            // 
-            this.buttonAddonTwo.AutoSize = true;
-            this.buttonAddonTwo.Location = new System.Drawing.Point(63, 46);
-            this.buttonAddonTwo.Name = "buttonAddonTwo";
-            this.buttonAddonTwo.Size = new System.Drawing.Size(62, 17);
-            this.buttonAddonTwo.TabIndex = 1;
-            this.buttonAddonTwo.TabStop = true;
-            this.buttonAddonTwo.Text = "Second";
-            this.buttonAddonTwo.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddonOne
-            // 
-            this.buttonAddonOne.AutoSize = true;
-            this.buttonAddonOne.Location = new System.Drawing.Point(6, 46);
-            this.buttonAddonOne.Name = "buttonAddonOne";
-            this.buttonAddonOne.Size = new System.Drawing.Size(44, 17);
-            this.buttonAddonOne.TabIndex = 0;
-            this.buttonAddonOne.TabStop = true;
-            this.buttonAddonOne.Text = "First";
-            this.buttonAddonOne.UseVisualStyleBackColor = true;
             // 
             // comboboxOutfits
             // 
@@ -117,10 +99,35 @@
             this.comboboxOutfits.Size = new System.Drawing.Size(113, 21);
             this.comboboxOutfits.TabIndex = 3;
             // 
+            // buttonAddonOne
+            // 
+            this.buttonAddonOne.AutoSize = true;
+            this.buttonAddonOne.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddonOne.Location = new System.Drawing.Point(6, 46);
+            this.buttonAddonOne.Name = "buttonAddonOne";
+            this.buttonAddonOne.Size = new System.Drawing.Size(44, 17);
+            this.buttonAddonOne.TabIndex = 0;
+            this.buttonAddonOne.TabStop = true;
+            this.buttonAddonOne.Text = "First";
+            this.buttonAddonOne.UseVisualStyleBackColor = true;
+            // 
+            // buttonAddonTwo
+            // 
+            this.buttonAddonTwo.AutoSize = true;
+            this.buttonAddonTwo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAddonTwo.Location = new System.Drawing.Point(63, 46);
+            this.buttonAddonTwo.Name = "buttonAddonTwo";
+            this.buttonAddonTwo.Size = new System.Drawing.Size(62, 17);
+            this.buttonAddonTwo.TabIndex = 1;
+            this.buttonAddonTwo.TabStop = true;
+            this.buttonAddonTwo.Text = "Second";
+            this.buttonAddonTwo.UseVisualStyleBackColor = true;
+            // 
             // Outfit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(153, 139);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

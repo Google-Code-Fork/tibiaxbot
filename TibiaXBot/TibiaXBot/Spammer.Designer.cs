@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textboxSpamText = new System.Windows.Forms.RichTextBox();
             this.buttonActivate = new System.Windows.Forms.CheckBox();
-            this.buttonGetPlayers = new System.Windows.Forms.Button();
             this.timerActivate = new System.Windows.Forms.Timer(this.components);
             this.textPlayerWorld = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,6 +49,7 @@
             this.numericInterval = new System.Windows.Forms.NumericUpDown();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.timerAutoUpdateOnlineList = new System.Windows.Forms.Timer(this.components);
+            this.buttonGetPlayers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericInterval)).BeginInit();
             this.SuspendLayout();
@@ -90,16 +90,6 @@
             this.buttonActivate.Text = "Activate Spammer";
             this.buttonActivate.UseVisualStyleBackColor = true;
             this.buttonActivate.CheckedChanged += new System.EventHandler(this.buttonActivate_CheckedChanged);
-            // 
-            // buttonGetPlayers
-            // 
-            this.buttonGetPlayers.Location = new System.Drawing.Point(301, 139);
-            this.buttonGetPlayers.Name = "buttonGetPlayers";
-            this.buttonGetPlayers.Size = new System.Drawing.Size(157, 27);
-            this.buttonGetPlayers.TabIndex = 4;
-            this.buttonGetPlayers.Text = "Get Online Players";
-            this.buttonGetPlayers.UseVisualStyleBackColor = true;
-            this.buttonGetPlayers.Click += new System.EventHandler(this.buttonGetPlayers_Click);
             // 
             // timerActivate
             // 
@@ -191,12 +181,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textMSGSent);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(299, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(247, 93);
@@ -266,7 +258,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 110);
+            this.label8.Location = new System.Drawing.Point(16, 112);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(105, 13);
             this.label8.TabIndex = 9;
@@ -275,7 +267,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 132);
+            this.label9.Location = new System.Drawing.Point(19, 125);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 13);
             this.label9.TabIndex = 10;
@@ -330,11 +322,29 @@
             this.timerAutoUpdateOnlineList.Interval = 15000;
             this.timerAutoUpdateOnlineList.Tick += new System.EventHandler(this.timerAutoUpdateOnlineList_Tick);
             // 
+            // buttonGetPlayers
+            // 
+            this.buttonGetPlayers.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
+            this.buttonGetPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGetPlayers.FlatAppearance.BorderSize = 0;
+            this.buttonGetPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGetPlayers.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonGetPlayers.Location = new System.Drawing.Point(301, 139);
+            this.buttonGetPlayers.Name = "buttonGetPlayers";
+            this.buttonGetPlayers.Size = new System.Drawing.Size(175, 25);
+            this.buttonGetPlayers.TabIndex = 14;
+            this.buttonGetPlayers.Text = "Get Online Players";
+            this.buttonGetPlayers.UseVisualStyleBackColor = true;
+            this.buttonGetPlayers.Click += new System.EventHandler(this.buttonGetPlayers_Click_1);
+            this.buttonGetPlayers.MouseHover += new System.EventHandler(this.buttonGetPlayers_MouseEnter);
+            // 
             // Spammer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(558, 200);
+            this.Controls.Add(this.buttonGetPlayers);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.numericInterval);
             this.Controls.Add(this.label10);
@@ -342,11 +352,11 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textPlayerWorld);
-            this.Controls.Add(this.buttonGetPlayers);
             this.Controls.Add(this.buttonActivate);
             this.Controls.Add(this.textboxSpamText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listboxPlayersOnline);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Spammer";
             this.Text = "Spammer";
@@ -365,10 +375,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox textboxSpamText;
         private System.Windows.Forms.CheckBox buttonActivate;
-        private System.Windows.Forms.Button buttonGetPlayers;
         private System.Windows.Forms.Timer timerActivate;
         private System.Windows.Forms.ComboBox textPlayerWorld;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label textMSGSent;
         private System.Windows.Forms.Timer timerInfo;
@@ -382,6 +390,8 @@
         private System.Windows.Forms.NumericUpDown numericInterval;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Timer timerAutoUpdateOnlineList;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonGetPlayers;
     }
 }
 

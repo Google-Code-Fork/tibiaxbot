@@ -25,5 +25,15 @@ namespace TibiaXBot
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+        }
     }
 }
