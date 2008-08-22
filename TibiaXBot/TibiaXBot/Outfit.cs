@@ -30,12 +30,13 @@ using System.Text;
 using System.Windows.Forms;
 using Tibia;
 using Tibia.Objects;
+using Tibia.Constants;
 
 namespace TibiaXBot
 {
     public partial class Outfit : Form
     {
-        public String[] names = Enum.GetNames(typeof(Tibia.Constants.OutfitType));
+
         public Client client;
         public Player player;
         public Tibia.Objects.Console console;
@@ -50,29 +51,100 @@ namespace TibiaXBot
         private void Outfit_Load(object sender, EventArgs e)
         {
 
-            for (int i = 0; i <= names.Length - 1; i++)
-            {
-                comboboxOutfits.Items.Add(names[i]);
-            }
+            foreach (OutfitType type in Enum.GetValues(typeof(OutfitType)))
+
+                comboboxOutfits.Items.Add(type);
+
+
         }
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
-            //player = client.GetPlayer();
+            player = client.GetPlayer();
             if (buttonEnable.Checked)
             {
-
-
-                //player.Outfit = ((Tibia.Constants.OutfitType)comboboxOutfits.SelectedItem);
+                comboboxOutfits.Enabled = false;
+                player.Outfit = (OutfitType)comboboxOutfits.SelectedItem;
             }
             else
             {
-                player.Look();
+                player.Outfit = OutfitType.GameMaster;
+                comboboxOutfits.Enabled = true;
+
             }
         }
 
+        private void buttonAddonOne_CheckedChanged(object sender, EventArgs e)
+        {
+            player = client.GetPlayer();
+            if (buttonAddonOne.Checked)
+            {
+                player.Addon = Tibia.Constants.OutfitAddon.Addon1;
+            }
+
+        }
+
+        private void buttonAddonTwo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (buttonAddonTwo.Checked)
+            {
+                player.Addon = Tibia.Constants.OutfitAddon.Addon2;
+            }
+
+        }
+
+        private void buttonAddonBoth_CheckedChanged(object sender, EventArgs e)
+        {
+            if (buttonAddonBoth.Checked)
+            {
+                player.Addon = Tibia.Constants.OutfitAddon.Both;
+            }
+
+        }
+
+        private void buttonAddonNone_CheckedChanged(object sender, EventArgs e)
+        {
+            player.Addon = Tibia.Constants.OutfitAddon.None;
+        }
+
+        private void buttonRainbow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (buttonRainbow.Checked)
+            {
+                timerRainbow.Enabled = true;
+            }
+            else
+            {
+                timerRainbow.Enabled = false;
+            }
+        }
+
+        private void timerRainbow_Tick(object sender, EventArgs e)
+        {
+            player.Color_Body = Tibia.Constants.OutfitColor.Black;
+            player.Color_Feet = Tibia.Constants.OutfitColor.Blue;
+            player.Color_Head = Tibia.Constants.OutfitColor.Brown;
+            player.Color_Legs = Tibia.Constants.OutfitColor.Green;
             
+            {
+                player.Color_Body = Tibia.Constants.OutfitColor.Blue;
+                player.Color_Feet = Tibia.Constants.OutfitColor.Brown;
+                player.Color_Head = Tibia.Constants.OutfitColor.Green;
+                player.Color_Legs = Tibia.Constants.OutfitColor.Black;
+                {
+                    player.Color_Body = Tibia.Constants.OutfitColor.Brown;
+                    player.Color_Feet = Tibia.Constants.OutfitColor.Green;
+                    player.Color_Head = Tibia.Constants.OutfitColor.Black;
+                    player.Color_Legs = Tibia.Constants.OutfitColor.Blue;
+                }
+            }
+        }
+
+        private void timerRainbow_Tick_1(object sender, EventArgs e)
+        {
 
         }
     }
+}
+    
 

@@ -42,6 +42,7 @@ namespace TibiaXBot.Updater
             WebClient wc = new WebClient();
             wc.DownloadFile(server_update,loc);
             Process.Start(loc);
+            
         }
     }
 }

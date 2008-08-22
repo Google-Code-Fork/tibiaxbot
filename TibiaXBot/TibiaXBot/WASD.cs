@@ -37,6 +37,7 @@ namespace TibiaXBot
     {
         public Player player;
         public Tibia.Objects.Console console;
+        
        
 
         public WASD(Client client)
@@ -94,6 +95,7 @@ namespace TibiaXBot
                 return true;
             }));
          */
+            
 
     }
     }
