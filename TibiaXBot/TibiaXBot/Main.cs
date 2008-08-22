@@ -42,6 +42,7 @@ namespace TibiaXBot
         public Form frmOutFit;
         public Form frmSpammer;
         public Form frmAbout;
+        public Form frmMapviewer;
 
 
         public Main()
@@ -57,6 +58,7 @@ namespace TibiaXBot
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
+            frmMapviewer = new Mapviewer(client);
 
         }
 
@@ -202,6 +204,11 @@ namespace TibiaXBot
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             trayIcon.Visible = false;
+        }
+
+        private void tibiaMapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMapviewer.ShowDialog();
         }
     }
 }

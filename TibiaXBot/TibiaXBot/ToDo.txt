@@ -11,7 +11,7 @@ because we wont add you to the team without both have been talking about it.
 
 ToDo:
 
-Spammer, STARTED
+SPAMMER, STARTED
 1# Write Messages to people - DONE // Jesper
 2# Adding so you swap between characters after 20 messages - NOT DONE
 3#
@@ -19,10 +19,10 @@ Spammer, STARTED
 
 -----
 
-Outfit, STARTED
+OUTFIT, STARTED
 1# Getting Outfits into listbox - DONE // Jesper
-2#
-3#
+2# Making it changing outfit - DONE // Jesper
+3# Make Rainbow Outfit - NOT DONE
 4#
 
 -----
@@ -31,6 +31,14 @@ WASD, - NOT STARTED
 1#
 2#
 3#
+4#
+
+-----
+
+MAPVIEWER, - STARTED
+1# Making the map load - DONE //Jesper
+2# Adding Plus - Minus - DONE //Jesper
+3# Adding Up - Down - NOT STARTED //Jesper
 4#
 
 -----

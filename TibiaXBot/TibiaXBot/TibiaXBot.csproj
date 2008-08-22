@@ -73,6 +73,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mapviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapviewer.Designer.cs">
+      <DependentUpon>Mapviewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Spammer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapviewer.resx">
+      <DependentUpon>Mapviewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spammer.resx">
       <DependentUpon>Spammer.cs</DependentUpon>
