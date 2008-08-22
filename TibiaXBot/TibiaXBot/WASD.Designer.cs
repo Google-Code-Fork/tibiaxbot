@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonKeyboard = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonEnable = new System.Windows.Forms.CheckBox();
             this.buttonCheckBox = new System.Windows.Forms.RadioButton();
+            this.timerWASD = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +85,11 @@
             this.buttonCheckBox.UseVisualStyleBackColor = true;
             this.buttonCheckBox.CheckedChanged += new System.EventHandler(this.buttonCheckBox_CheckedChanged);
             // 
+            // timerWASD
+            // 
+            this.timerWASD.Enabled = true;
+            this.timerWASD.Tick += new System.EventHandler(this.timerWASD_Tick);
+            // 
             // WASD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,5 +114,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton buttonCheckBox;
         private System.Windows.Forms.CheckBox buttonEnable;
+        private System.Windows.Forms.Timer timerWASD;
     }
 }

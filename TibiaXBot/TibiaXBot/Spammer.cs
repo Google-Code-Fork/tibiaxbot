@@ -46,12 +46,13 @@ namespace Spammer
         public Spammer(Client client)
         {
             InitializeComponent();
+            this.client = client;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
             console = new Tibia.Objects.Console(client);
-            client = Tibia.Util.ClientChooser.ShowBox();
+          
         }
 
         private void buttonGetPlayers_Click(object sender, EventArgs e)
@@ -76,7 +77,7 @@ namespace Spammer
             textboxSpamText.Text = textboxSpamText.Text.Replace(listboxPlayersOnline.Items[index].ToString(), "<name>");
             label4.Text = listboxPlayersOnline.Items[index].ToString();
             index++;
-
+            
 
         }
 

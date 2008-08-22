@@ -47,6 +47,7 @@ namespace TibiaXBot
         public Main()
         {
             InitializeComponent();
+            
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -72,6 +73,8 @@ namespace TibiaXBot
         private void button3_Click(object sender, EventArgs e)
         {
             frmOutFit.ShowDialog();
+            
+           
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)

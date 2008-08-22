@@ -44,6 +44,7 @@ namespace TibiaXBot
         public Outfit(Client client)
         {
             InitializeComponent();
+            this.client = client;
         }
 
         private void Outfit_Load(object sender, EventArgs e)
@@ -57,20 +58,21 @@ namespace TibiaXBot
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
-            
-
-            client = Tibia.Util.ClientChooser.ShowBox();
-            player = client.GetPlayer();
+            //player = client.GetPlayer();
             if (buttonEnable.Checked)
             {
-               // player.SetOutfit(Tibia.Constants.OutfitType + (comboboxOutfits.Text), 0, 0, 0, 0, Tibia.Constants.OutfitAddon.None);
-                comboboxOutfits.Enabled = false;
-                player.Outfit = ((Tibia.Constants.OutfitType)comboboxOutfits.SelectedItem);
+
+
+                //player.Outfit = ((Tibia.Constants.OutfitType)comboboxOutfits.SelectedItem);
             }
             else
             {
-                comboboxOutfits.Enabled = true;
+                player.Look();
             }
         }
+
+            
+
+        }
     }
-}
+
