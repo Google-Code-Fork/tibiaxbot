@@ -183,7 +183,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
-  <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonIpchanger.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk2mFwAAAAAAADYAAAAoAAAAUAAAABkAAAABABgAAAAAAAAAAAASCwAAEgsAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAECAAECAAIDAAIEAAIEAAMFAAMGAAQHAAQH
@@ -288,7 +288,7 @@
         JycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJSUlIyMjHh4eFxcX
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonSpammer.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk2mFwAAAAAAADYAAAAoAAAAUAAAABkAAAABABgAAAAAAAAAAAASCwAAEgsAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAECAAECAAIDAAIEAAIEAAMFAAMGAAQHAAQH
@@ -393,6 +393,9 @@
         JycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJSUlIyMjHh4eFxcX
 </value>
   </data>
+  <metadata name="timerIfLoggedin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 19</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAgAwAABILAAASCwAAAAAAAAAA

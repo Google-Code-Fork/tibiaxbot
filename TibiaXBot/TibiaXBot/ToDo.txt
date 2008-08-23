@@ -38,14 +38,14 @@ WASD, - NOT STARTED
 MAPVIEWER, - STARTED
 1# Making the map load - DONE //Jesper
 2# Adding Plus - Minus - DONE //Jesper
-3# Adding Up - Down - NOT STARTED //Jesper
+3# Adding Up - Down - DONE //Jesper
 4#
 
 -----
 
 GUI, - STARTED
 1# Buttons - DONE //aluwama
-2#
+2# 
 3#
 4#
 

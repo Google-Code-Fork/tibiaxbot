@@ -35,13 +35,14 @@
             this.Outfits = new System.Windows.Forms.ToolStripMenuItem();
             this.spammerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wASDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tibiaMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tibiaMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonIpchanger = new System.Windows.Forms.Button();
+            this.buttonOutfit = new System.Windows.Forms.Button();
+            this.buttonSpammer = new System.Windows.Forms.Button();
+            this.buttonWASD = new System.Windows.Forms.Button();
+            this.timerIfLoggedin = new System.Windows.Forms.Timer(this.components);
             this.contextTray.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,118 +65,123 @@
             this.exitToolStripMenuItem});
             this.contextTray.Name = "contextTray";
             this.contextTray.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextTray.Size = new System.Drawing.Size(153, 158);
+            this.contextTray.Size = new System.Drawing.Size(131, 136);
             this.contextTray.Opening += new System.ComponentModel.CancelEventHandler(this.contextTray_Opening);
             // 
             // Outfits
             // 
             this.Outfits.Name = "Outfits";
-            this.Outfits.Size = new System.Drawing.Size(152, 22);
+            this.Outfits.Size = new System.Drawing.Size(130, 22);
             this.Outfits.Text = "Outfits";
             this.Outfits.Click += new System.EventHandler(this.Outfits_Click);
             // 
             // spammerToolStripMenuItem
             // 
             this.spammerToolStripMenuItem.Name = "spammerToolStripMenuItem";
-            this.spammerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.spammerToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.spammerToolStripMenuItem.Text = "Spammer";
             this.spammerToolStripMenuItem.Click += new System.EventHandler(this.spammerToolStripMenuItem_Click_1);
             // 
             // wASDToolStripMenuItem
             // 
             this.wASDToolStripMenuItem.Name = "wASDToolStripMenuItem";
-            this.wASDToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wASDToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.wASDToolStripMenuItem.Text = "WASD";
             this.wASDToolStripMenuItem.Click += new System.EventHandler(this.wASDToolStripMenuItem_Click_1);
+            // 
+            // tibiaMapToolStripMenuItem
+            // 
+            this.tibiaMapToolStripMenuItem.Name = "tibiaMapToolStripMenuItem";
+            this.tibiaMapToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.tibiaMapToolStripMenuItem.Text = "Tibia Map";
+            this.tibiaMapToolStripMenuItem.Click += new System.EventHandler(this.tibiaMapToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click_2);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // button4
+            // buttonIpchanger
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(103, 43);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 25);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "IPChanger";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.MouseLeave += new System.EventHandler(this.b4mouseleave);
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.b4mouseenter);
+            this.buttonIpchanger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonIpchanger.BackgroundImage")));
+            this.buttonIpchanger.FlatAppearance.BorderSize = 0;
+            this.buttonIpchanger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIpchanger.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonIpchanger.Location = new System.Drawing.Point(103, 43);
+            this.buttonIpchanger.Name = "buttonIpchanger";
+            this.buttonIpchanger.Size = new System.Drawing.Size(80, 25);
+            this.buttonIpchanger.TabIndex = 4;
+            this.buttonIpchanger.Text = "IPChanger";
+            this.buttonIpchanger.UseVisualStyleBackColor = true;
+            this.buttonIpchanger.MouseLeave += new System.EventHandler(this.b4mouseleave);
+            this.buttonIpchanger.Click += new System.EventHandler(this.button4_Click);
+            this.buttonIpchanger.MouseEnter += new System.EventHandler(this.b4mouseenter);
             // 
-            // button3
+            // buttonOutfit
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(12, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 25);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Outfit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.MouseLeave += new System.EventHandler(this.b3mouseleave);
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.MouseEnter += new System.EventHandler(this.b3mouseenter);
+            this.buttonOutfit.BackColor = System.Drawing.Color.Transparent;
+            this.buttonOutfit.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
+            this.buttonOutfit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonOutfit.FlatAppearance.BorderSize = 0;
+            this.buttonOutfit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.buttonOutfit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOutfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOutfit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonOutfit.Location = new System.Drawing.Point(12, 12);
+            this.buttonOutfit.Name = "buttonOutfit";
+            this.buttonOutfit.Size = new System.Drawing.Size(80, 25);
+            this.buttonOutfit.TabIndex = 2;
+            this.buttonOutfit.Text = "Outfit";
+            this.buttonOutfit.UseVisualStyleBackColor = false;
+            this.buttonOutfit.MouseLeave += new System.EventHandler(this.b3mouseleave);
+            this.buttonOutfit.Click += new System.EventHandler(this.button3_Click);
+            this.buttonOutfit.MouseEnter += new System.EventHandler(this.b3mouseenter);
             // 
-            // button2
+            // buttonSpammer
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(12, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 25);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Spammer";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseLeave += new System.EventHandler(this.b2mouseleave);
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseEnter += new System.EventHandler(this.b2mouseenter);
+            this.buttonSpammer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSpammer.BackgroundImage")));
+            this.buttonSpammer.FlatAppearance.BorderSize = 0;
+            this.buttonSpammer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSpammer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonSpammer.Location = new System.Drawing.Point(12, 43);
+            this.buttonSpammer.Name = "buttonSpammer";
+            this.buttonSpammer.Size = new System.Drawing.Size(80, 25);
+            this.buttonSpammer.TabIndex = 1;
+            this.buttonSpammer.Text = "Spammer";
+            this.buttonSpammer.UseVisualStyleBackColor = true;
+            this.buttonSpammer.MouseLeave += new System.EventHandler(this.b2mouseleave);
+            this.buttonSpammer.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSpammer.MouseEnter += new System.EventHandler(this.b2mouseenter);
             // 
-            // button1
+            // buttonWASD
             // 
-            this.button1.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(103, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 25);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "WASD";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseLeave += new System.EventHandler(this.b1mouseleave);
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.b1mouseenter);
+            this.buttonWASD.BackgroundImage = global::TibiaXBot.Properties.Resources.button;
+            this.buttonWASD.FlatAppearance.BorderSize = 0;
+            this.buttonWASD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWASD.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonWASD.Location = new System.Drawing.Point(103, 12);
+            this.buttonWASD.Name = "buttonWASD";
+            this.buttonWASD.Size = new System.Drawing.Size(80, 25);
+            this.buttonWASD.TabIndex = 0;
+            this.buttonWASD.Text = "WASD";
+            this.buttonWASD.UseVisualStyleBackColor = true;
+            this.buttonWASD.MouseLeave += new System.EventHandler(this.b1mouseleave);
+            this.buttonWASD.Click += new System.EventHandler(this.button1_Click);
+            this.buttonWASD.MouseEnter += new System.EventHandler(this.b1mouseenter);
             // 
-            // tibiaMapToolStripMenuItem
+            // timerIfLoggedin
             // 
-            this.tibiaMapToolStripMenuItem.Name = "tibiaMapToolStripMenuItem";
-            this.tibiaMapToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.tibiaMapToolStripMenuItem.Text = "Tibia Map";
-            this.tibiaMapToolStripMenuItem.Click += new System.EventHandler(this.tibiaMapToolStripMenuItem_Click);
+            this.timerIfLoggedin.Enabled = true;
+            this.timerIfLoggedin.Tick += new System.EventHandler(this.timerIfLoggedin_Tick);
             // 
             // Main
             // 
@@ -183,10 +189,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(195, 75);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonIpchanger);
+            this.Controls.Add(this.buttonOutfit);
+            this.Controls.Add(this.buttonSpammer);
+            this.Controls.Add(this.buttonWASD);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
@@ -200,10 +206,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonWASD;
+        private System.Windows.Forms.Button buttonSpammer;
+        private System.Windows.Forms.Button buttonOutfit;
+        private System.Windows.Forms.Button buttonIpchanger;
         private System.Windows.Forms.NotifyIcon trayIcon;
         private System.Windows.Forms.ContextMenuStrip contextTray;
         private System.Windows.Forms.ToolStripMenuItem Outfits;
@@ -212,6 +218,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tibiaMapToolStripMenuItem;
+        private System.Windows.Forms.Timer timerIfLoggedin;
     }
 }
 

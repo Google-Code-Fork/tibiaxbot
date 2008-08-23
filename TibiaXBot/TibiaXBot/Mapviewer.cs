@@ -17,6 +17,7 @@ namespace TibiaXBot
         public Client client;
         public Tibia.Util.MapViewer mv;
         public Player player;
+        public int currentfloor = 7;
 
         public Mapviewer(Client client)
         {
@@ -56,6 +57,22 @@ namespace TibiaXBot
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            currentfloor++;
+        }
+
+        private void buttonDown_Click(object sender, EventArgs e)
+        {
+            currentfloor--;
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            mapViewer1.SetLevel(currentfloor);
+            Floor.Text = currentfloor.ToString();
         }
     }
 }

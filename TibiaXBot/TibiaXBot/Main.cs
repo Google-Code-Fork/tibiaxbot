@@ -43,6 +43,7 @@ namespace TibiaXBot
         public Form frmSpammer;
         public Form frmAbout;
         public Form frmMapviewer;
+        public Client client = Tibia.Util.ClientChooser.ShowBox();
 
 
         public Main()
@@ -53,13 +54,17 @@ namespace TibiaXBot
 
         private void Main_Load(object sender, EventArgs e)
         {
-            Client client = Tibia.Util.ClientChooser.ShowBox();
+            
             frmWASD = new WASD(client);
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
             frmAbout = new About();
             frmMapviewer = new Mapviewer(client);
-
+            buttonSpammer.Enabled = false;
+            buttonOutfit.Enabled = false;
+            buttonIpchanger.Enabled = false;
+            buttonWASD.Enabled = false;
+            contextTray.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -122,42 +127,42 @@ namespace TibiaXBot
 
         private void b3mouseenter(object sender, EventArgs e)
         {
-            button3.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+            buttonOutfit.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
         }
 
         private void b3mouseleave(object sender, EventArgs e)
         {
-            button3.BackgroundImage = Image.FromFile("Resources/button.bmp");
+            buttonOutfit.BackgroundImage = Image.FromFile("Resources/button.bmp");
         }
 
         private void b1mouseleave(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Image.FromFile("Resources/button.bmp");
+            buttonWASD.BackgroundImage = Image.FromFile("Resources/button.bmp");
         }
 
         private void b1mouseenter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+            buttonWASD.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
         }
 
         private void b2mouseenter(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+            buttonSpammer.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
         }
 
         private void b2mouseleave(object sender, EventArgs e)
         {
-            button2.BackgroundImage = Image.FromFile("Resources/button.bmp");
+            buttonSpammer.BackgroundImage = Image.FromFile("Resources/button.bmp");
         }
 
         private void b4mouseenter(object sender, EventArgs e)
         {
-            button4.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
+            buttonIpchanger.BackgroundImage = Image.FromFile("Resources/button_hover.bmp");
         }
 
         private void b4mouseleave(object sender, EventArgs e)
         {
-            button4.BackgroundImage = Image.FromFile("Resources/button.bmp");
+            buttonIpchanger.BackgroundImage = Image.FromFile("Resources/button.bmp");
         }
 
         private void trayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -209,6 +214,21 @@ namespace TibiaXBot
         private void tibiaMapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMapviewer.ShowDialog();
+        }
+
+        private void timerIfLoggedin_Tick(object sender, EventArgs e)
+        {
+            if (client.LoggedIn)
+            {
+                buttonOutfit.Enabled = true;
+                buttonIpchanger.Enabled = true;
+                buttonWASD.Enabled = true;
+                buttonSpammer.Enabled = true;
+                contextTray.Enabled = true;
+                timerIfLoggedin.Enabled = false;
+                
+            }
+        
         }
     }
 }
