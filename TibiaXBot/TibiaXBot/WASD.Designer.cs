@@ -87,7 +87,6 @@
             // 
             // timerWASD
             // 
-            this.timerWASD.Enabled = true;
             this.timerWASD.Tick += new System.EventHandler(this.timerWASD_Tick);
             // 
             // WASD

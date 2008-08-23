@@ -37,22 +37,32 @@ namespace TibiaXBot
     {
         public Player player;
         public Tibia.Objects.Console console;
-        
-       
+        public Client client;
+
+
+
 
         public WASD(Client client)
         {
             InitializeComponent();
-            
+            this.client = client;
+
         }
         private void WASD_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (buttonEnable.Checked)
+            {
+                timerWASD.Enabled = true;
+            }
+            else
+            {
+                timerWASD.Enabled = false;
+            }
         }
 
         private void buttonKeyboard_CheckedChanged(object sender, EventArgs e)
@@ -82,22 +92,27 @@ namespace TibiaXBot
 
         private void timerWASD_Tick(object sender, EventArgs e)
         {
+           
+                
             
-           /* player = client.GetPlayer();
-            KeyboardHook.Enable();
-            KeyboardHook.Add(Keys.W, new KeyboardHook.KeyPressed(delegate
-            {
-
-                if (KeyboardHook.KeyDown(Keys.W))
+                player = client.GetPlayer();
+                KeyboardHook.Enable();
+                KeyboardHook.Add(Keys.W, new KeyboardHook.KeyPressed(delegate
                 {
-                    player.Walk(Tibia.Constants.WalkDirection.Up);
-                }
-                return true;
-            }));
-         */
-            
 
-    }
+                    if (KeyboardHook.KeyDown(Keys.W))
+                    {
+                        player.Walk(Tibia.Constants.WalkDirection.Up);
+                    }
+                    return false;
+
+                
+                }));
+
+
+
+            
+        }
     }
 }
 

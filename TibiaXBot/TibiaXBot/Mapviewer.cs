@@ -18,6 +18,7 @@ namespace TibiaXBot
         public Tibia.Util.MapViewer mv;
         public Player player;
         public int currentfloor = 7;
+        public string directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Tibia\\Automap\\";
 
         public Mapviewer(Client client)
         {
@@ -28,6 +29,7 @@ namespace TibiaXBot
         private void Mapviewer_Load(object sender, EventArgs e)
         {
             player = client.GetPlayer();
+            mapViewer1.Directory = directory;
             mapViewer1.LoadMap();
             mapViewer1.SetMapCenter(player.Location);
         }

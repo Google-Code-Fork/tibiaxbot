@@ -85,7 +85,7 @@
             // 
             // mapViewer1
             // 
-            this.mapViewer1.Directory = "C:\\Documents and Settings\\JesperC#\\Application Data\\Tibia\\Automap\\";
+            this.mapViewer1.Directory = "";
             this.mapViewer1.DrawCoors = true;
             this.mapViewer1.DrawCrosshair = true;
             this.mapViewer1.Location = new System.Drawing.Point(0, 1);
