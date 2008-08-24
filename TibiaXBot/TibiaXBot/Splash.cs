@@ -39,6 +39,7 @@ namespace TibiaXBot
         private void Splash_Load(object sender, EventArgs e)
         {
             this.TransparencyKey = Color.FromArgb(255, 0, 255);
+            this.TransparencyKey = Color.Fuchsia;
             timer1.Start();
         }
 

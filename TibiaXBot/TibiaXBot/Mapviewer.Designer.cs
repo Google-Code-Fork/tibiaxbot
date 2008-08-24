@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mapviewer));
             this.button1 = new System.Windows.Forms.Button();
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
@@ -165,6 +166,7 @@
             this.Controls.Add(this.plus);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Mapviewer";
             this.Text = "Mapviewer";
             this.Load += new System.EventHandler(this.Mapviewer_Load);

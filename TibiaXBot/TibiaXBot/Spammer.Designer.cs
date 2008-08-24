@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Spammer));
             this.listboxPlayersOnline = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textboxSpamText = new System.Windows.Forms.RichTextBox();
@@ -358,6 +359,7 @@
             this.Controls.Add(this.listboxPlayersOnline);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Spammer";
             this.Text = "Spammer";
             this.Load += new System.EventHandler(this.Main_Load);

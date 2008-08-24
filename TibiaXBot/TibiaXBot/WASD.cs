@@ -57,6 +57,7 @@ namespace TibiaXBot
             if (buttonEnable.Checked)
             {
                 timerWASD.Enabled = true;
+                KeyboardHook.Enable();
             }
             else
             {
@@ -102,12 +103,12 @@ namespace TibiaXBot
                 }
                 if (GetAsyncKeyState((int)Keys.Home) !=0)
                 {
-                    KeyboardHook.Enable();
+                    KeyboardHook.Disable();
                 }
             }
                 
                 player = client.GetPlayer();
-                KeyboardHook.Enable();
+                
                 KeyboardHook.Add(Keys.W, new KeyboardHook.KeyPressed(delegate
                 {
                     player.Walk(Tibia.Constants.WalkDirection.Up);
