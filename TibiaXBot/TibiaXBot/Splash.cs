@@ -41,5 +41,10 @@ namespace TibiaXBot
             this.TransparencyKey = Color.FromArgb(255, 0, 255);
             timer1.Start();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

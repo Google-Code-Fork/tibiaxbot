@@ -60,11 +60,13 @@ namespace TibiaXBot
             frmOutFit = new Outfit(client);
             frmAbout = new About();
             frmMapviewer = new Mapviewer(client);
+            frmSplash = new Splash();
             buttonSpammer.Enabled = false;
             buttonOutfit.Enabled = false;
             buttonIpchanger.Enabled = false;
             buttonWASD.Enabled = false;
             contextTray.Enabled = false;
+            frmSplash.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -225,7 +227,8 @@ namespace TibiaXBot
                 buttonWASD.Enabled = true;
                 buttonSpammer.Enabled = true;
                 contextTray.Enabled = true;
-                timerIfLoggedin.Enabled = false;                
+                timerIfLoggedin.Enabled = false;
+              
             }
         
         }

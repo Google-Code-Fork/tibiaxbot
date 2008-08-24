@@ -106,20 +106,7 @@ namespace Spammer
 
         }
 
-        private void httpwwwtibiatekcomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.tibiatek.com/");
-        }
 
-        private void httptpforumsorgToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://tpforums.org/");
-        }
-
-        private void httptibiaapigooglecodecomToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://tibiaapi.googlecode.com/");
-        }
 
         private void openGuildBroadCasterToolStripMenuItem_Click(object sender, EventArgs e)
         {

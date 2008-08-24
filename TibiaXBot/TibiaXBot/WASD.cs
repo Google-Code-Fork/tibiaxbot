@@ -38,9 +38,8 @@ namespace TibiaXBot
         public Player player;
         public Tibia.Objects.Console console;
         public Client client;
-
-
-
+        [System.Runtime.InteropServices.DllImport("User32.dll")]
+        private static extern short GetAsyncKeyState(int keyCode);
 
         public WASD(Client client)
         {
@@ -62,6 +61,7 @@ namespace TibiaXBot
             else
             {
                 timerWASD.Enabled = false;
+                KeyboardHook.Disable();
             }
         }
 
@@ -71,6 +71,8 @@ namespace TibiaXBot
             {
                 buttonEnable.Visible = false;
                 buttonEnable.Checked = false;
+                KeyboardHook.Disable();
+                timerWASD.Enabled = true;
             }
             else
             {
@@ -92,6 +94,18 @@ namespace TibiaXBot
 
         private void timerWASD_Tick(object sender, EventArgs e)
         {
+            if (buttonKeyboard.Checked)
+            {
+                if (GetAsyncKeyState((int)Keys.Insert) !=0)
+                {
+                    KeyboardHook.Enable();
+                }
+                if (GetAsyncKeyState((int)Keys.Home) !=0)
+                {
+                    KeyboardHook.Enable();
+                }
+            }
+                
                 player = client.GetPlayer();
                 KeyboardHook.Enable();
                 KeyboardHook.Add(Keys.W, new KeyboardHook.KeyPressed(delegate
@@ -117,7 +131,7 @@ namespace TibiaXBot
                     player.Walk(Tibia.Constants.WalkDirection.Right);
                     return false;
 
-                }));            
+                }));     
         }
     }
 }
