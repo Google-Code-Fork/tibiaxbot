@@ -92,26 +92,32 @@ namespace TibiaXBot
 
         private void timerWASD_Tick(object sender, EventArgs e)
         {
-           
-                
-            
                 player = client.GetPlayer();
                 KeyboardHook.Enable();
                 KeyboardHook.Add(Keys.W, new KeyboardHook.KeyPressed(delegate
                 {
-
-                    if (KeyboardHook.KeyDown(Keys.W))
-                    {
-                        player.Walk(Tibia.Constants.WalkDirection.Up);
-                    }
+                    player.Walk(Tibia.Constants.WalkDirection.Up);
                     return false;
-
                 
                 }));
+                KeyboardHook.Add(Keys.A, new KeyboardHook.KeyPressed(delegate
+                {
+                    player.Walk(Tibia.Constants.WalkDirection.Left);
+                    return false;
 
+                }));
+                KeyboardHook.Add(Keys.S, new KeyboardHook.KeyPressed(delegate
+                {
+                    player.Walk(Tibia.Constants.WalkDirection.Down);
+                    return false;
 
+                }));
+                KeyboardHook.Add(Keys.D, new KeyboardHook.KeyPressed(delegate
+                {
+                    player.Walk(Tibia.Constants.WalkDirection.Right);
+                    return false;
 
-            
+                }));            
         }
     }
 }

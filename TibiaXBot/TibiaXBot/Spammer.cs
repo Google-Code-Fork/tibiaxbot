@@ -51,8 +51,7 @@ namespace Spammer
 
         private void Main_Load(object sender, EventArgs e)
         {
-            console = new Tibia.Objects.Console(client);
-          
+            console = new Tibia.Objects.Console(client);          
         }
 
         private void buttonGetPlayers_Click(object sender, EventArgs e)
@@ -77,8 +76,6 @@ namespace Spammer
             textboxSpamText.Text = textboxSpamText.Text.Replace(listboxPlayersOnline.Items[index].ToString(), "<name>");
             label4.Text = listboxPlayersOnline.Items[index].ToString();
             index++;
-            
-
         }
 
         private void buttonActivate_CheckedChanged(object sender, EventArgs e)
@@ -95,15 +92,8 @@ namespace Spammer
 
         private void timerInfo_Tick(object sender, EventArgs e)
         {
-
             textMSGSent.Text = index.ToString();
-
-
             label6.Text = listboxPlayersOnline.Items.Count.ToString();
-
-
-
-
         }
 
         private void listboxPlayersOnline_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,7 +109,6 @@ namespace Spammer
         private void httpwwwtibiatekcomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.tibiatek.com/");
-
         }
 
         private void httptpforumsorgToolStripMenuItem_Click(object sender, EventArgs e)

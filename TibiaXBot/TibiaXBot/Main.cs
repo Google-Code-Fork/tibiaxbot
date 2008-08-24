@@ -43,6 +43,7 @@ namespace TibiaXBot
         public Form frmSpammer;
         public Form frmAbout;
         public Form frmMapviewer;
+        public Form frmSplash;
         public Client client = Tibia.Util.ClientChooser.ShowBox();
 
 
@@ -54,7 +55,6 @@ namespace TibiaXBot
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
             frmWASD = new WASD(client);
             frmSpammer = new Spammer.Spammer(client);
             frmOutFit = new Outfit(client);
@@ -167,18 +167,18 @@ namespace TibiaXBot
 
         private void trayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-
+            this.ShowDialog();
 
         }
 
         private void contextTray_Opening(object sender, CancelEventArgs e)
         {
-
-    }
+        
+        }
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -225,8 +225,7 @@ namespace TibiaXBot
                 buttonWASD.Enabled = true;
                 buttonSpammer.Enabled = true;
                 contextTray.Enabled = true;
-                timerIfLoggedin.Enabled = false;
-                
+                timerIfLoggedin.Enabled = false;                
             }
         
         }
