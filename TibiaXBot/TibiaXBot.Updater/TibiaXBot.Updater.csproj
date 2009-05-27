@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{00E62A3C-71D2-4351-AA5D-1DB169B65E95}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -88,10 +88,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\TibiaAPI\trunk\tibiaapi\TibiaAPI.csproj">
-      <Project>{4D132EB7-B97D-461D-85CF-949FF5A7BA96}</Project>
-      <Name>TibiaAPI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TibiaXBot\TibiaXBot.csproj">
       <Project>{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}</Project>
       <Name>TibiaXBot</Name>

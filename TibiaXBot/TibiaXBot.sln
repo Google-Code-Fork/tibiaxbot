@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual C# Express 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaXBot", "TibiaXBot\TibiaXBot.csproj", "{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaAPI", "..\..\TibiaAPI\trunk\tibiaapi\TibiaAPI.csproj", "{4D132EB7-B97D-461D-85CF-949FF5A7BA96}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaXBot.Updater", "TibiaXBot.Updater\TibiaXBot.Updater.csproj", "{00E62A3C-71D2-4351-AA5D-1DB169B65E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TibiaAPI", "TibiaAPI\trunk\tibiaapi\TibiaAPI.csproj", "{4D132EB7-B97D-461D-85CF-949FF5A7BA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,14 @@ Global
 		{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B7DC1D-EF12-4952-BDD0-A71F3366A3CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00E62A3C-71D2-4351-AA5D-1DB169B65E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00E62A3C-71D2-4351-AA5D-1DB169B65E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E62A3C-71D2-4351-AA5D-1DB169B65E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E62A3C-71D2-4351-AA5D-1DB169B65E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D132EB7-B97D-461D-85CF-949FF5A7BA96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

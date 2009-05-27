@@ -116,7 +116,7 @@
             this.comboboxOutfits.Name = "comboboxOutfits";
             this.comboboxOutfits.Size = new System.Drawing.Size(123, 21);
             this.comboboxOutfits.TabIndex = 3;
-            this.comboboxOutfits.Text = "GameMaster";
+            this.comboboxOutfits.SelectedIndexChanged += new System.EventHandler(this.comboboxOutfits_SelectedIndexChanged);
             // 
             // buttonAddonOne
             // 

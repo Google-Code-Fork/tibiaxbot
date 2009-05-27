@@ -50,12 +50,14 @@ namespace TibiaXBot
 
         private void Outfit_Load(object sender, EventArgs e)
         {
-
+            buttonEnable.Checked = false;
             foreach (OutfitType type in Enum.GetValues(typeof(OutfitType)))
-
                 comboboxOutfits.Items.Add(type);
+            comboboxOutfits.Text = "Cat";
+            {
 
 
+            }
         }
 
         private void buttonEnable_CheckedChanged(object sender, EventArgs e)
@@ -143,6 +145,14 @@ namespace TibiaXBot
         private void timerRainbow_Tick_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboboxOutfits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboboxOutfits.Text == "Invisible")
+            {
+                comboboxOutfits.Text = "Cat";
+            }
         }
     }
 }

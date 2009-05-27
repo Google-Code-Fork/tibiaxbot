@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using TibiaXBot.Properties;
-using Tibia;
-using Tibia.Objects;
+
 
 
 namespace TibiaXBot.Updater
